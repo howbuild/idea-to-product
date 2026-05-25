@@ -1,0 +1,30 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "idea-to-product-marketplace",
+  "description": "Marketplace for the Idea to Product AI PM workflow plugin.",
+  "version": "0.1.0",
+  "owner": {
+    "name": "Idea to Product contributors"
+  },
+  "plugins": [
+    {
+      "name": "idea-to-product",
+      "displayName": "Idea to Product",
+      "source": "./plugins/idea-to-product",
+      "description": "AI PM workflow plugin that turns non-developer ideas into PRD, AC, policy, measurement, decision logs, and structural wireframes.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Idea to Product contributors"
+      },
+      "category": "productivity",
+      "tags": [
+        "ai-pm",
+        "prd",
+        "requirements",
+        "workflow",
+        "hooks",
+        "claude-design"
+      ]
+    }
+  ]
+}

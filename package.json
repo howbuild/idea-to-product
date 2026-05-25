@@ -1,0 +1,29 @@
+{
+  "name": "idea-to-product",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Multi-runtime AI PM plugin for turning ideas into developer-ready product requirements.",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "plugins/idea-to-product"
+  ],
+  "scripts": {
+    "check:files": "python3 plugins/idea-to-product/hooks/output-validator.py --manifest",
+    "check:python": "python3 scripts/validate-python-hooks.py",
+    "check:manifests": "python3 scripts/validate-manifests.py",
+    "check": "python3 scripts/validate-manifests.py && python3 scripts/validate-python-hooks.py && python3 plugins/idea-to-product/hooks/output-validator.py --manifest",
+    "package:claude": "python3 scripts/package-claude-plugin.py",
+    "package:codex": "python3 scripts/package-codex-plugin.py"
+  },
+  "keywords": [
+    "ai-pm",
+    "prd",
+    "plugin",
+    "codex",
+    "claude-code",
+    "claude-cowork",
+    "claude-design",
+    "cursor"
+  ]
+}

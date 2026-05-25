@@ -1,0 +1,24 @@
+id: idea-to-product
+name: Idea to Product
+version: 0.1.0
+description: Multi-runtime AI PM plugin for turning non-developer ideas into developer-ready product requirements.
+entry: plugins/idea-to-product
+license: MIT
+runtimes:
+  - claude-code
+  - codex
+  - claude-cowork
+  - claude-design
+operatingSystems:
+  - windows
+  - macos
+components:
+  workflows: plugins/idea-to-product/workflows
+  commands: plugins/idea-to-product/commands
+  hooks: plugins/idea-to-product/hooks
+  agents: plugins/idea-to-product/agents
+  skills: plugins/idea-to-product/skills
+  domains: plugins/idea-to-product/domains
+  templates: plugins/idea-to-product/templates
+  mcp: plugins/idea-to-product/mcp
+  designHandoff: plugins/idea-to-product/templates/design-handoff-brief.md
