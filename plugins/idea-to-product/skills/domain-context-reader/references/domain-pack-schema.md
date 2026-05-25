@@ -1,0 +1,21 @@
+# Domain Pack Schema
+
+`domain.yaml` fields:
+
+- `id`
+- `name`
+- `description`
+- `common_actors`
+- `common_jobs`
+- `common_states`
+- `required_policies`
+- `common_exceptions`
+- `common_permissions`
+- `measurement_candidates`
+- `question_categories`
+- `wireframe_patterns`
+- `mcp_suggestions`
+- `compliance_notes`
+- `glossary`
+
+Related domain-pack files may also include `reference-sources.md` for public reference types and comparable work-flow types.

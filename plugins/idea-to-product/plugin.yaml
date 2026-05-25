@@ -1,0 +1,51 @@
+id: idea-to-product
+name: Idea to Product
+version: 0.1.0
+description: AI PM workflow plugin for turning ideas into developer-ready product requirements.
+license: MIT
+entrypoints:
+  start: commands/start.md
+  addFeature: commands/add-feature.md
+  refineWireframe: commands/refine-wireframe.md
+  reviewScope: commands/review-scope.md
+  generateDocs: commands/generate-docs.md
+  researchReferences: commands/research-references.md
+  compareProducts: commands/compare-products.md
+  handoffToDesign: commands/handoff-to-design.md
+  importDesignFeedback: commands/import-design-feedback.md
+workflows:
+  main: workflows/idea-to-product.md
+  designHandoff: workflows/design-handoff.md
+  designFeedbackLoop: workflows/design-feedback-loop.md
+hooks:
+  claude: hooks/hooks.claude.json
+  codex: hooks/hooks.codex.json
+  compatibility: hooks/hooks.json
+agents:
+  directory: agents
+skills:
+  directory: skills
+domainPacks:
+  included: false
+  template: domains/_template
+outputs:
+  - PRD.md
+  - AC.md
+  - POLICY.md
+  - MEASUREMENT.md
+  - DECISION_LOG.md
+  - COMPLETENESS.md
+  - REVIEW_REPORT.md
+  - wireframe.html
+  - DESIGN_HANDOFF_BRIEF.md
+  - CLAUDE_DESIGN_PROMPT.md
+optionalOutputs:
+  - REFERENCE_RESEARCH.md
+  - DESIGN_FEEDBACK_LOG.md
+supportedRuntimes:
+  - Claude Code
+  - Codex
+  - Claude Cowork + Claude Design
+supportedOperatingSystems:
+  - Windows
+  - macOS

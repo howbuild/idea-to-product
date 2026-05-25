@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>요청 관리 게시판 - Structural Wireframe</title>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #f8fafc; color: #111827; }
+    main { max-width: 1040px; margin: 0 auto; padding: 32px 20px; }
+    section { background: #fff; border: 1px solid #d1d5db; padding: 20px; margin: 16px 0; }
+    label { display: block; margin: 12px 0 4px; }
+    input, textarea, select, button { font: inherit; padding: 10px 12px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+    th, td { border: 1px solid #d1d5db; padding: 10px; text-align: left; }
+    .note { color: #4b5563; }
+    .state { display: inline-block; border: 1px solid #9ca3af; padding: 4px 8px; margin-right: 6px; }
+  </style>
+</head>
+<body>
+  <main data-req-id="request-board-root">
+    <p class="note" data-req-id="wireframe-notice">This is a structural prototype for product discussion. It is not production code or final UI design.</p>
+
+    <section data-req-id="request-create-form">
+      <h1 data-req-id="request-board-title">요청 관리 게시판</h1>
+      <label for="request-title" data-req-id="request-title-label">요청 제목</label>
+      <input id="request-title" data-req-id="request-title-input" placeholder="요청 제목">
+      <label for="request-body" data-req-id="request-body-label">요청 내용</label>
+      <textarea id="request-body" data-req-id="request-body-input" placeholder="요청 내용을 입력합니다"></textarea>
+      <p class="note" data-req-id="request-submit-policy-note">POL-001: 요청 등록 권한 필요. AC-001과 연결.</p>
+      <button data-req-id="request-submit-button">요청 등록</button>
+    </section>
+
+    <section data-req-id="request-list-controls">
+      <label for="request-search" data-req-id="request-search-label">검색</label>
+      <input id="request-search" data-req-id="request-search-input" placeholder="제목 또는 내용 검색">
+      <label for="request-status-filter" data-req-id="request-status-filter-label">상태 필터</label>
+      <select id="request-status-filter" data-req-id="request-status-filter">
+        <option>전체</option>
+        <option>접수</option>
+        <option>처리중</option>
+        <option>완료</option>
+        <option>보류</option>
+      </select>
+    </section>
+
+    <section data-req-id="request-list-section">
+      <h2>요청 목록</h2>
+      <p data-req-id="request-state-values">
+        <span class="state">접수</span>
+        <span class="state">처리중</span>
+        <span class="state">완료</span>
+        <span class="state">보류</span>
+      </p>
+      <table data-req-id="request-list-table">
+        <thead>
+          <tr>
+            <th>제목</th>
+            <th>상태</th>
+            <th>등록일</th>
+            <th>액션</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-req-id="request-list-row">
+            <td>샘플 요청</td>
+            <td>접수</td>
+            <td>2026-05-25</td>
+            <td><button data-req-id="request-status-change">상태 변경</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section data-req-id="empty-request-state">
+      <h2>빈 상태</h2>
+      <p>등록된 요청이 없을 때 이 안내를 보여줍니다.</p>
+    </section>
+
+    <section data-req-id="permission-denied-state">
+      <h2>권한 없음 상태</h2>
+      <p>상태 변경 권한이 없는 사용자가 액션을 시도하면 안내를 보여줍니다.</p>
+    </section>
+
+    <section data-req-id="measurement-note-section">
+      <h2>측정/기록 후보</h2>
+      <p data-req-id="request-submit-measurement-note">MEA-001: 요청 등록 이벤트</p>
+      <p data-req-id="request-status-measurement-note">MEA-002: 상태 변경 로그</p>
+      <p data-req-id="request-completion-time-note">MEA-003: 완료까지 걸린 시간</p>
+    </section>
+  </main>
+</body>
+</html>

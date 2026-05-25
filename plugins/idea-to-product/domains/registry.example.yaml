@@ -1,0 +1,6 @@
+domains:
+  - id: example-domain
+    name: Example Domain Pack
+    path: ../external-wrapper/domains/example-domain
+    description: External domain packs should live outside the core repo.
+    enabled: false

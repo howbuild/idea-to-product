@@ -1,0 +1,36 @@
+{
+  "name": "idea-to-product",
+  "version": "0.1.0",
+  "description": "Multi-runtime AI PM plugin with workflow orchestration, hook review gates, reviewer agents, and supporting skills.",
+  "author": {
+    "name": "Idea to Product contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ai-pm",
+    "prd",
+    "requirements",
+    "workflow",
+    "hooks"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Idea to Product",
+    "shortDescription": "Turn ideas into developer-ready product requirements.",
+    "longDescription": "Idea to Product helps non-developers shape ideas into PRD, AC, policy, measurement, decision logs, and structural HTML wireframes through PM workflows, commands, hook gates, and reviewer agents.",
+    "developerName": "Idea to Product contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use Idea to Product to turn this idea into screen-based questions, policy decisions, measurement design, AC, and PRD output."
+    ],
+    "composerIcon": "./assets/icon.png.placeholder",
+    "logo": "./assets/logo.png.placeholder",
+    "screenshots": [
+      "./assets/screenshot-1.png.placeholder"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "idea-to-product-docs": {
+      "command": "example-mcp-server",
+      "args": [
+        "--readonly"
+      ],
+      "purpose": "Read external domain documents as question candidates."
+    }
+  }
+}

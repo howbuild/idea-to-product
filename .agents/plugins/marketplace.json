@@ -1,0 +1,20 @@
+{
+  "name": "idea-to-product-marketplace",
+  "interface": {
+    "displayName": "Idea to Product Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "idea-to-product",
+      "source": {
+        "source": "local",
+        "path": "./plugins/idea-to-product"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

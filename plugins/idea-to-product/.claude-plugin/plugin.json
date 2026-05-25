@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "idea-to-product",
+  "displayName": "Idea to Product",
+  "version": "0.1.0",
+  "description": "AI PM workflow plugin for PRD, AC, policy, measurement, decision logs, and structural wireframes.",
+  "author": {
+    "name": "Idea to Product contributors"
+  },
+  "commands": [
+    "./commands/"
+  ],
+  "agents": [
+    "./agents/competitive-pattern-reviewer.md",
+    "./agents/design-handoff-writer.md",
+    "./agents/human-writing-editor.md",
+    "./agents/measurement-reviewer.md",
+    "./agents/pm-reviewer.md",
+    "./agents/policy-reviewer.md",
+    "./agents/product-flow-reviewer.md",
+    "./agents/qa-reviewer.md",
+    "./agents/reference-researcher.md",
+    "./agents/scope-guard.md",
+    "./agents/tech-reviewer.md"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "hooks": "./hooks/hooks.claude.json"
+}
