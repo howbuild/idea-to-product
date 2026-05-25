@@ -20,6 +20,16 @@ Start with:
 - `commands/start.md`
 - `workflows/idea-to-product.md`
 
+## Question and Flow Rule
+
+Questions must be easy to understand at first read while preserving useful practical terms.
+
+Use the Core User Flow:
+
+- 진입과 다음 행동: where the user comes from and where the user goes next
+- 사용 규모: how much usage or repeated action should pass through
+- 품질 기준: what rules keep the product useful and trustworthy when usage grows
+
 ## Required Gate Order
 
 1. `user-prompt-scope-router.py`

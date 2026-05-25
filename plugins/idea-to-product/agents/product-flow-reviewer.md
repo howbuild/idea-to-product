@@ -26,6 +26,9 @@ This reviewer does not evaluate visual style.
 - 주요 액션이 AC와 연결되어 있는가
 - 화면에 있는 기능이 Core Intent와 연결되어 있는가
 - 운영 흐름과 사용자 흐름이 충돌하지 않는가
+- 진입과 다음 행동: 사용자가 어디서 와서 어디로 가는지 보이는가
+- 사용 규모: 사용자가 많거나 행동이 반복될 때 어디서 막힐 수 있는가
+- 품질 기준: 사용자가 많아져도 계속 괜찮게 쓰기 위한 규칙이 있는가
 
 ## Do Not Review
 
@@ -42,3 +45,4 @@ This reviewer does not evaluate visual style.
 - 정책 연결이 필요한 부분
 - AC가 필요한 부분
 - 사용자 확인이 필요한 질문
+- 핵심 유저 플로우 관점에서 빠진 질문

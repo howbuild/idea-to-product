@@ -6,7 +6,7 @@ The repo has root metadata, marketplace metadata, runtime plugin metadata, and a
 
 ## Goal 2. Workflow-Centered PM System
 
-The top-level workflow defines idea intake, Core Intent Card, domain injection, structural wireframe, screen-based questions, policy extraction, measurement design, feature review, completeness, document generation, consistency review, human writing pass, and final output save.
+The top-level workflow defines idea intake, Core Intent Card, Core User Flow, domain injection, structural wireframe, screen-based questions, policy extraction, measurement design, feature review, completeness, document generation, consistency review, human writing pass, and final output save.
 
 ## Goal 3. Commands As Entrypoints
 
@@ -23,6 +23,8 @@ Agents cover PM, scope, product flow, policy, measurement, QA, tech, and human w
 ## Goal 6. Supporting Skills
 
 Skills are small support units for questions, wireframes, domain context, policy extraction, measurement design, PRD writing, AC writing, decision logs, and human writing audit.
+
+Questions must be easy to understand while preserving useful product terms such as PRD, AC, KPI, 권한정책, 상태값, 이벤트, and 로그.
 
 ## Goal 7. Domain-Neutral Core
 
@@ -46,4 +48,4 @@ Claude Code, Codex, Claude Cowork + Claude Design, Windows, and macOS are all su
 
 ## Goal 12. Claude Design Handoff
 
-The plugin can create a Design handoff brief, Claude Design prompt, and feedback import loop without expanding product scope or judging visual style.
+The plugin can create a Design handoff brief, Claude Design prompt, and feedback import loop without expanding product scope, losing the Core User Flow, or judging visual style.

@@ -20,6 +20,7 @@ Remove AI-like wording and make outputs easier for a human teammate to read.
 - 불필요한 굵은 글씨
 - 실무 용어를 지나치게 풀어쓴 문장
 - 유치한 문장
+- 질문의 결정 포인트가 한 번에 보이지 않는 문장
 
 ## Preserve
 

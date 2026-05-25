@@ -1,5 +1,7 @@
 # Question Card
 
+The question must be concrete and easy to understand. Keep practical terms when needed, but explain them plainly.
+
 Use this structure:
 
 ```md

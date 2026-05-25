@@ -19,6 +19,7 @@ Prepare Claude Design handoff artifacts from confirmed product requirements.
 - 해결하려는 문제
 - MVP 범위
 - 제외 범위
+- 핵심 유저 플로우: 진입과 다음 행동, 사용 규모, 품질 기준
 - 주요 화면 목록
 - 화면별 목적
 - 화면별 주요 액션
@@ -37,6 +38,7 @@ Prepare Claude Design handoff artifacts from confirmed product requirements.
 - force visual style
 - choose colors or fonts
 - expand feature scope
+- turn the Core User Flow into unapproved new features
 - treat new visual ideas as confirmed product requirements
 
 ## Output

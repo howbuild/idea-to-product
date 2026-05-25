@@ -71,6 +71,14 @@ Idea to Product helps non-developers participate in product design by working fr
 
 The core value is that a non-developer naturally learns product thinking while shaping a buildable requirement set. The plugin does not think instead of the user. It works more like an AI PM partner that asks grounded questions, explains tradeoffs, and keeps product scope from drifting.
 
+Questions are written so the decision is easy to understand at first read, while useful product terms such as PRD, AC, KPI, permission policy, state values, events, logs, and `data-req-id` are kept.
+
+The workflow also uses a Core User Flow:
+
+- Entry and next action: where the user starts and what the user should do next
+- Usage scale: how often or how much the action is expected to happen
+- Quality criteria: what rules keep the product useful and trustworthy when usage grows
+
 Users learn by:
 
 - looking at a screen structure

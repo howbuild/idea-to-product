@@ -17,6 +17,10 @@ Generate final product documents from confirmed decisions.
 9. Run human-writing-auditor final pass.
 10. Save final outputs.
 
+## Writing Rule
+
+Final documents should be easy to read, but use professional product wording. Interview questions may be simple; PRD, POLICY, MEASUREMENT, AC, and DECISION_LOG should state confirmed decisions, assumptions, or unresolved items.
+
 ## Precondition
 
 Run `completeness-gate.py` before final generation.

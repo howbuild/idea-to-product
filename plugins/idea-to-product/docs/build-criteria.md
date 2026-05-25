@@ -75,6 +75,16 @@ Use `product-flow-reviewer`, not `ux-reviewer`.
 
 The reviewer checks user actions, states, policy links, AC links, and Core Intent alignment. It does not review visual style.
 
+It must also check the Core User Flow:
+
+- 진입과 다음 행동: where the user comes from and where the user goes next
+- 사용 규모: how much usage or repeated action should pass through
+- 품질 기준: what rules keep the product useful and trustworthy when usage grows
+
+## Question Readability Rule
+
+User-facing questions must be easy to understand at first read, but must keep useful practical terms such as PRD, AC, KPI, 권한정책, 상태값, 이벤트, 로그, and `data-req-id`.
+
 ## Reference Research Rule
 
 Reference research is a support layer. It turns outside examples into question candidates, policy candidates, state candidates, permission candidates, measurement/logging candidates, MVP judgments, excluded-scope judgments, and AC candidates.
@@ -83,4 +93,4 @@ It must distinguish source facts from inference and must not copy competitors.
 
 ## Design Handoff Rule
 
-Claude Design handoff is a first-class path. It produces a design brief and prompt, but Idea to Product still reviews product flow, state, policy, measurement, AC, and scope. It does not judge visual style.
+Claude Design handoff is a first-class path. It produces a design brief and prompt, but Idea to Product still reviews product flow, Core User Flow, state, policy, measurement, AC, and scope. It does not judge visual style.

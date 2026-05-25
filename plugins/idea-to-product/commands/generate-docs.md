@@ -19,6 +19,8 @@ Use when the user wants to create the final output documents.
 9. Run `human-writing-final-pass.py`.
 10. Save final files.
 
+Final documents should be easy to read, but use professional product wording. Do not leave interview questions as PRD content unless they are explicitly marked as unresolved items.
+
 If the user asks for Claude Design handoff, also generate:
 
 - `DESIGN_HANDOFF_BRIEF.md`

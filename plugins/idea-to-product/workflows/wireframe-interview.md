@@ -31,6 +31,9 @@ Review:
 - AC links for actions
 - Core Intent alignment
 - conflict between operational flow and user flow
+- 진입과 다음 행동: where the user enters and what they should do next
+- 사용 규모: where many users or repeated actions may create bottlenecks
+- 품질 기준: what rules keep the product useful and trustworthy when usage grows
 
 Do not review visual style, color, typography, component library, or final UI expression.
 
@@ -71,4 +74,17 @@ D. 잘 모르겠음
 
 답변 방법:
 A, B, C, D 중 하나를 골라도 되고, 직접 답을 써도 됩니다.
+```
+
+When asking about the Core User Flow, keep the wording concrete:
+
+```md
+진입과 다음 행동:
+사용자는 어디서 이 화면으로 오고, 등록한 뒤 어디로 가야 하나요?
+
+사용 규모:
+요청 등록이 많아질 때 어디에서 가장 많이 막힐 수 있나요?
+
+품질 기준:
+사용자가 많아져도 계속 괜찮게 쓰려면 어떤 규칙이 필요할까요?
 ```

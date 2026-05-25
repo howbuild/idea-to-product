@@ -30,6 +30,14 @@ Questions are not simple data collection. They should help the user understand w
 - Do not present one choice as the only correct answer.
 - Tie the question to a `data-req-id` when possible.
 - Show operational, development, or product differences between choices.
+- Make the user-facing question easy to understand at first read.
+- Keep practical terms such as PRD, AC, KPI, 권한정책, 상태값, 이벤트, 로그, and `data-req-id` when they matter.
+- Explain practical terms in one plain sentence when needed.
+- Use the Core User Flow when relevant:
+  - 진입과 다음 행동: 사용자는 어디서 와서 어디로 가나요?
+  - 사용 규모: 얼마나 많이 지나가게 만들고 싶나요?
+  - 품질 기준: 사용자가 많아져도 계속 괜찮게 쓰려면 어떤 규칙이 필요할까요?
+- Do not ask abstract flow questions such as "흐름이 커졌을 때 무엇을 지켜야 하나요?"
 
 ## References
 

@@ -22,6 +22,7 @@ Create design handoff artifacts for Claude Cowork + Claude Design mode.
 - Do not expand functionality.
 - Mark new feature ideas as suggestions.
 - Keep product structure, states, permissions, policy, measurement, and AC visible.
+- Keep the Core User Flow visible as 진입과 다음 행동, 사용 규모, and 품질 기준.
 
 ## References
 

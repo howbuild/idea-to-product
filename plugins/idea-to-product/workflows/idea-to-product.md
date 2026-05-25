@@ -12,6 +12,10 @@ Turn a non-developer's idea into developer-ready product requirements while help
 
 Do not think instead of the user. Help the user make product decisions.
 
+Questions must be easy to understand, but not childish.
+
+Write the question so that the decision is clear even to a young child. Keep practical product terms when they matter, such as PRD, AC, KPI, 권한정책, 상태값, 이벤트, 로그, and `data-req-id`. If a term may be unfamiliar, keep the term and explain it with one plain sentence.
+
 Questions must reveal why a product decision matters:
 
 - who can act
@@ -22,24 +26,42 @@ Questions must reveal why a product decision matters:
 - what should move to v2
 - what developers need to implement
 
+## Core User Flow
+
+Use this structure after the Core Intent Card and throughout wireframe, policy, measurement, and review work.
+
+- 진입과 다음 행동: 사용자는 어디서 와서 어디로 가나요?
+- 사용 규모: 얼마나 많이 지나가게 만들고 싶나요?
+- 품질 기준: 사용자가 많아져도 계속 괜찮게 쓰려면 어떤 규칙이 필요할까요?
+
+Do not use abstract wording as the user-facing question. For example, ask "사용자가 많아져도 계속 괜찮게 쓰려면 어떤 규칙이 필요할까요?" instead of "흐름이 커졌을 때 무엇을 지켜야 하나요?"
+
+Use the Core User Flow to create:
+
+- entry point and next-step questions
+- bottleneck and usage-volume questions
+- trust, misuse, outdated-content, misleading-copy, and quality-rule questions
+- measurement candidates for entry and next action, usage scale, and quality criteria
+
 ## Required Flow
 
 1. Idea Intake
 2. Create Core Intent Card
-3. Check whether reference discovery or domain pack injection is needed
-4. Check Domain Pack
-5. Create first structural HTML Wireframe
-6. Ask screen-based questions
-7. Provide choice and recommendation cards
-8. Extract policies
-9. Design measurement and records
-10. Run hook review when features are added
-11. Check PRD completeness
-12. Generate documents
-13. Generate Claude Design handoff when requested
-14. Run cross-document consistency review
-15. Run human writing final pass
-16. Save final outputs
+3. Apply Core User Flow
+4. Check whether reference discovery or domain pack injection is needed
+5. Check Domain Pack
+6. Create first structural HTML Wireframe
+7. Ask screen-based questions
+8. Provide choice and recommendation cards
+9. Extract policies
+10. Design measurement and records
+11. Run hook review when features are added
+12. Check PRD completeness
+13. Generate documents
+14. Generate Claude Design handoff when requested
+15. Run cross-document consistency review
+16. Run human writing final pass
+17. Save final outputs
 
 ## Core Intent Card
 
@@ -52,6 +74,7 @@ Maintain this card throughout the session:
 - MVP scope
 - excluded scope
 - success KPI
+- core user flow
 - current feature list
 - open questions
 
@@ -71,6 +94,8 @@ Every product question should include:
 - recommendation
 - recommendation reason
 - answer method
+
+Question text must keep the decision concrete. Prefer "이 버튼은 누가 볼 수 있어야 하나요?" over "권한정책 적용 대상을 정의할까요?"
 
 ## Recommendation Rule
 

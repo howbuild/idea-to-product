@@ -9,6 +9,10 @@ Use this prompt to visualize the confirmed product structure.
 - Problem:
 - MVP scope:
 - Excluded scope:
+- Core User Flow:
+  - 진입과 다음 행동:
+  - 사용 규모:
+  - 품질 기준:
 
 ## Design Task
 
@@ -34,4 +38,5 @@ Do not force or assume a specific visual style, color palette, font, or final la
 - error state
 - permission-denied state
 - measurement/logging requirements
+- Core User Flow
 - features not to add

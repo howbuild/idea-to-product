@@ -17,6 +17,7 @@ Write PRD from confirmed decisions.
 - 목표
 - 핵심 사용자
 - 사용자 여정
+- 핵심 유저 플로우
 - MVP 범위
 - 제외 범위
 - 핵심 기능

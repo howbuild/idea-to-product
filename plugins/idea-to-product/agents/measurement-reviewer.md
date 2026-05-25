@@ -18,6 +18,7 @@ Review whether user behavior, state changes, operational records, and KPI links 
 - 상태 변경 로그가 있는가
 - 운영자가 나중에 확인할 기록이 있는가
 - KPI와 연결되는가
+- 진입과 다음 행동, 사용 규모, 품질 기준 중 어떤 유저 플로우 항목인지 보이는가
 - 기록하지 않을 정보가 정의되어 있는가
 - 개인정보/민감정보 주의사항이 있는가
 
@@ -25,6 +26,7 @@ Review whether user behavior, state changes, operational records, and KPI links 
 
 - missing events
 - missing logs
+- missing user flow item
 - KPI gaps
 - records to avoid
 - next measurement questions

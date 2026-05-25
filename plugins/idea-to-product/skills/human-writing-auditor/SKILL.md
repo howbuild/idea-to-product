@@ -21,6 +21,7 @@ Do not require it as an external dependency.
 - Remove AI-style introductions.
 - Reduce abstract filler.
 - Avoid childish wording.
+- Make question intent easy to understand without dumbing down useful product terms.
 - Do not remove useful practical terms.
 - Explain practical terms only when needed.
 

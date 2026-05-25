@@ -9,6 +9,12 @@ description: Designs user behavior events, state change logs, operational record
 
 Design user behavior events, state change logs, operational records, and KPI links.
 
+Use the Core User Flow when deciding what to measure:
+
+- 진입과 다음 행동: entry point, next step, and drop-off point
+- 사용 규모: usage count, repeated actions, and bottleneck volume
+- 품질 기준: bad experience, misuse, outdated information, misleading copy, and trust signal
+
 ## Required Questions
 
 Ask whether key actions should be recorded.
@@ -34,6 +40,7 @@ MVP에서는 핵심 기능이 실제로 쓰이는지 먼저 확인하는 것이 
 
 - measurement ID
 - related feature
+- user flow item: 진입과 다음 행동, 사용 규모, or 품질 기준
 - related screen `data-req-id`
 - recorded action
 - record timing

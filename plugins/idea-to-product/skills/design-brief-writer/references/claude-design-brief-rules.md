@@ -7,6 +7,7 @@ The brief should include:
 - problem
 - MVP scope
 - excluded scope
+- Core User Flow: 진입과 다음 행동, 사용 규모, and 품질 기준
 - screen list
 - screen purpose
 - main actions per screen

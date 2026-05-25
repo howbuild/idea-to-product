@@ -28,6 +28,16 @@ The plugin helps a non-developer turn an idea into developer-ready product requi
 
 The main entry workflow is [idea-to-product.md](workflows/idea-to-product.md).
 
+## Question and Flow Style
+
+Questions should be easy to understand at first read while keeping useful product terms such as PRD, AC, KPI, permission policy, state values, events, logs, and `data-req-id`.
+
+The workflow uses a Core User Flow:
+
+- 진입과 다음 행동: where the user comes from and where the user goes next
+- 사용 규모: how much usage or repeated action should pass through
+- 품질 기준: what rules keep the product useful and trustworthy when usage grows
+
 ## Reference Research
 
 Reference and competitive research are supported as a helper layer. The goal is not a market research report.

@@ -16,6 +16,16 @@ Idea to Product는 Claude Code, Codex, Claude Cowork + Claude Design, Windows, m
 
 Skills는 workflow, command, hook, agent가 호출하는 보조 능력입니다.
 
+## 질문과 흐름 기준
+
+질문은 한 번 읽고 결정할 내용이 바로 보여야 합니다. 다만 PRD, AC, KPI, 권한정책, 상태값, 이벤트, 로그, `data-req-id`처럼 실제 요구사항에 필요한 단어는 유지합니다.
+
+핵심 유저 플로우는 다음 세 가지로 봅니다.
+
+- 진입과 다음 행동: 사용자는 어디서 와서 어디로 가나요?
+- 사용 규모: 얼마나 많이 지나가게 만들고 싶나요?
+- 품질 기준: 사용자가 많아져도 계속 괜찮게 쓰려면 어떤 규칙이 필요할까요?
+
 ## 런타임별 사용
 
 - Claude Code: commands, hooks, agents, skills, workflows, Python review gates

@@ -12,4 +12,5 @@
 - Do not add `domains/cs-commerce`, `domains/construction`, `domains/healthcare`, `domains/fintech`, or any other concrete domain pack.
 - HTML wireframes are structural prototypes, not final UI design and not production code.
 - Keep practical terms such as PRD, AC, KPI, 권한정책, 상태값, 이벤트, and 로그 when they are useful.
+- Product questions should be easy to understand at first read, but should not replace useful practical terms with overly childish wording.
 - When recommendation cards are written, include choices, benefits, cautions, recommendation, recommendation reason, and when another choice is better.

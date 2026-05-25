@@ -11,8 +11,12 @@ Design events, logs, records, and KPI links for user actions, state changes, and
 3. List admin or operator actions.
 4. Decide what to record and what not to record.
 5. Map events to KPI.
-6. Add privacy and sensitive information cautions.
-7. Connect measurement IDs to PRD, POLICY, AC, and `data-req-id`.
+6. Classify flow measurement:
+   - 진입과 다음 행동: entry point, next step, drop-off point
+   - 사용 규모: usage count, repeated actions, bottleneck volume
+   - 품질 기준: bad experience, misuse, outdated information, misleading copy, trust signal
+7. Add privacy and sensitive information cautions.
+8. Connect measurement IDs to PRD, POLICY, AC, and `data-req-id`.
 
 ## Example Question
 
@@ -31,6 +35,19 @@ B. 클릭 여부만 기록한다.
 
 추천 이유:
 MVP에서는 핵심 기능이 실제로 쓰이는지 먼저 확인하는 것이 좋다.
+```
+
+Flow examples:
+
+```md
+진입과 다음 행동:
+사용자가 어디서 들어와서 이 버튼까지 왔는지 기록해야 하나요?
+
+사용 규모:
+이 행동이 하루에 몇 번 일어나는지 봐야 하나요?
+
+품질 기준:
+사용자가 많아졌을 때 잘못된 정보나 실패가 얼마나 생기는지 봐야 하나요?
 ```
 
 ## Output

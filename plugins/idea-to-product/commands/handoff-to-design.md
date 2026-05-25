@@ -22,6 +22,7 @@ Use when the product structure is ready to hand off to Claude Design.
 - problem
 - MVP scope
 - excluded scope
+- Core User Flow: 진입과 다음 행동, 사용 규모, and 품질 기준
 - screen list
 - screen purpose
 - main actions per screen
@@ -37,4 +38,4 @@ Use when the product structure is ready to hand off to Claude Design.
 
 ## Rule
 
-Claude Design may visualize the agreed product structure. It must not silently expand feature scope.
+Claude Design may visualize the agreed product structure. It must not silently expand feature scope or turn the Core User Flow into unapproved new features.

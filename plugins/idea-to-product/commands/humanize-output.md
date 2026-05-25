@@ -13,7 +13,8 @@ Use when the user wants to remove AI-like writing from outputs.
 3. Remove AI-style openings.
 4. Reduce filler and abstract wording.
 5. Preserve practical terms such as 권한정책, 상태값, AC, PRD, KPI, 이벤트, and 로그.
-6. Save the cleaned version only after review.
+6. Keep question intent easy to understand without making the wording childish.
+7. Save the cleaned version only after review.
 
 ## Banned Examples
 
