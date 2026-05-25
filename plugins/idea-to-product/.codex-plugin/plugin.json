@@ -27,10 +27,10 @@
     "defaultPrompt": [
       "Use Idea to Product to turn this idea into screen-based questions, policy decisions, measurement design, AC, and PRD output."
     ],
-    "composerIcon": "./assets/icon.png.placeholder",
-    "logo": "./assets/logo.png.placeholder",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
     "screenshots": [
-      "./assets/screenshot-1.png.placeholder"
+      "./assets/screenshot-1.png"
     ]
   }
 }

@@ -44,7 +44,7 @@ This manifest records the intended marketplace-ready repository layout.
 - `mcp/`: MCP suggestions and example config
 - `docs/`: operating guides and build criteria
 - `examples/`: generic output sample
-- `assets/`: placeholder marketplace assets
+- `assets/`: marketplace icon, logo, and screenshot assets
 - `scripts/install-agents.sh`: optional helper for runtimes that need separate reviewer-agent installation
 - `scripts/validate-manifests.py`: manifest validator
 - `scripts/validate-python-hooks.py`: Python hook validator
