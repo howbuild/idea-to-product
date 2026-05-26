@@ -2,6 +2,8 @@
 
 Question wording should be plain enough that the decision is clear at first read. Keep practical terms such as 권한정책, 상태값, 이벤트, 로그, PRD, AC, KPI, and `data-req-id` when they matter.
 
+The question line must match the choice axis. If the choices are entry paths, ask which path the user should use. If the choices are defaults, ask what the default should be. Do not ask vague questions where the screen is the subject.
+
 Use this structure:
 
 ```md
@@ -52,4 +54,22 @@ Flow question examples:
 
 품질 기준:
 사용자가 많아져도 계속 괜찮게 쓰려면 어떤 규칙이 필요할까요?
+```
+
+Decision-axis examples:
+
+```md
+Good:
+사용자는 비교 화면을 어떤 방법으로 열어야 하나요?
+
+Avoid:
+이 비교 화면은 어디서 시작하는 게 맞을까요?
+```
+
+```md
+Good:
+비교 화면에 처음 들어왔을 때, 두 3D 뷰어의 카메라 기본값을 어떻게 둘까요?
+
+Avoid:
+두 3D 뷰어의 카메라는 어떤 상태가 기본이면 좋을까요?
 ```

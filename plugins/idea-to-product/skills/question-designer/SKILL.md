@@ -31,6 +31,9 @@ Questions are not simple data collection. They should help the user understand w
 - Tie the question to a `data-req-id` when possible.
 - Show operational, development, or product differences between choices.
 - Make the user-facing question easy to understand at first read.
+- Make the question line summarize the same decision axis as the A/B/C/D choices.
+- Ask what the user should do, what default the screen should use, or what rule the system should follow.
+- Do not ask vague screen-subject questions such as "이 화면은 어디서 시작하는 게 맞을까요?"
 - Keep practical terms such as PRD, AC, KPI, 권한정책, 상태값, 이벤트, 로그, and `data-req-id` when they matter.
 - Explain practical terms in one plain sentence when needed.
 - Use the Core User Flow when relevant:

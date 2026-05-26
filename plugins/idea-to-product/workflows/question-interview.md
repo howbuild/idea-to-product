@@ -27,6 +27,9 @@ The user-facing question must be easy enough that the decision is obvious at fir
 - Do not replace practical terms with vague words like "그거" or overly childish words.
 - When a practical term appears, explain it in plain language if needed.
 - Prefer short concrete questions tied to a screen action.
+- The question must name the decision axis shown by the choices.
+- Ask about the user's action, the screen's default behavior, or the system rule. Do not make the screen itself the vague subject.
+- Avoid weak endings like "맞을까요?" or "좋을까요?" unless the object of the decision is explicit.
 
 Good:
 
@@ -34,10 +37,22 @@ Good:
 이 요청 등록 버튼은 누가 볼 수 있어야 하나요?
 ```
 
+```md
+사용자는 비교 화면을 어떤 방법으로 열어야 하나요?
+```
+
+```md
+비교 화면에 처음 들어왔을 때, 두 3D 뷰어의 카메라 기본값을 어떻게 둘까요?
+```
+
 Avoid:
 
 ```md
 권한정책의 적용 범위를 어떤 방식으로 구성할까요?
+```
+
+```md
+이 비교 화면은 어디서 시작하는 게 맞을까요?
 ```
 
 For flow questions, use the Core User Flow:
