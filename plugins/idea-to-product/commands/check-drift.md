@@ -12,10 +12,10 @@ Use when the user wants to inspect whether the current feature list is drifting 
 2. Compare each feature with Core Intent.
 3. Identify features not directly connected to the core problem, core user, or KPI.
 4. Recommend one of:
-   - MVP 포함
-   - 축소 포함
-   - v2 이동
-   - 보류
+   - Must-have
+   - reduced Must-have
+   - Nice-to-have
+   - Hold
 5. Record the result in `DECISION_LOG`.
 
 ## Required Output

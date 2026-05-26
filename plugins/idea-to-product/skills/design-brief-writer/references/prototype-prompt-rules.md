@@ -4,7 +4,9 @@ Claude Design prompt should:
 
 - ask Design to visualize the agreed product structure
 - avoid forcing colors, fonts, and layout taste
-- keep MVP scope fixed
+- keep Must-have requirements fixed
+- keep Nice-to-have requirements out of the prototype unless explicitly requested
+- preserve operating intent and scalability constraints
 - preserve the confirmed Core User Flow: 진입과 다음 행동, 사용 규모, and 품질 기준
 - separate new feature ideas into suggestions
 - preserve states, permissions, policy notes, and measurement requirements

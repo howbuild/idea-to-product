@@ -21,15 +21,15 @@ The goal is not to copy competitors. The goal is to create question candidates a
 - 공통적으로 등장하는 권한정책이 있는가
 - 자주 쓰이는 예외 처리가 있는가
 - 측정/기록에 참고할 패턴이 있는가
-- MVP에는 과한 기능이 있는가
+- Nice-to-have로 둘 기능이 있는가
 
 ## Output
 
 - 참고 대상
 - 관찰한 패턴
 - 우리 제품에 쓸 수 있는 질문
-- MVP에 넣을 후보
-- v2로 미룰 후보
+- Must-have로 둘 후보
+- Nice-to-have로 둘 후보
 - 조사 한계
 - 출처와 확인 날짜
 - 사실과 추론의 구분

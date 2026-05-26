@@ -8,6 +8,8 @@ import json
 import os
 from pathlib import Path
 
+from hook_context import existing_files, print_skipped
+
 
 BANNED = [
     "좋은 질문입니다",
@@ -29,11 +31,14 @@ def main() -> int:
     parser.add_argument("--review-dir", default=os.environ.get("ITP_REVIEW_DIR", "reviews"))
     args = parser.parse_args()
 
+    files = existing_files(args.files)
+    if not files:
+        print_skipped("No Idea to Product final documents found; final writing review was not written.")
+        return 0
+
     findings = []
-    for raw in args.files:
-        path = Path(raw)
-        if not path.exists():
-            continue
+    for path in files:
+        raw = str(path)
         text = path.read_text(encoding="utf-8")
         for phrase in BANNED:
             if phrase in text:

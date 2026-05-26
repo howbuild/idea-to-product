@@ -11,6 +11,6 @@ Require:
 
 - Core Intent connection
 - user need
-- MVP fit
+- Must-have/Nice-to-have fit
 - policy and measurement impact review
 - decision log entry

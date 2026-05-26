@@ -87,7 +87,7 @@ Users learn by:
 - reading recommendation reasons
 - deciding policies and states
 - considering records, events, and KPIs
-- separating MVP from v2
+- separating Must-have from Nice-to-have
 - seeing why some features should not be added yet
 
 ## Why It Exists
@@ -295,8 +295,8 @@ The goal is to create better product questions and better requirement options:
 - 상태값 후보 찾기
 - 권한정책 후보 찾기
 - 측정/기록 후보 찾기
-- MVP 범위 판단하기
-- v2로 미룰 기능 구분하기
+- Must-have 요구사항 판단하기
+- Nice-to-have 요구사항 구분하기
 
 Research results should connect to:
 
@@ -306,7 +306,7 @@ Research results should connect to:
 - AC
 - decision log
 
-Important: do not copy competitors. Use only patterns that fit the current product's Core Intent, core user, and MVP scope.
+Important: do not copy competitors. Use only patterns that fit the current product's Core Intent, core user, and Must-have/Nice-to-have priority.
 
 Good use:
 

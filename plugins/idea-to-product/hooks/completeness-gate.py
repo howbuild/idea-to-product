@@ -8,15 +8,16 @@ import json
 import os
 from pathlib import Path
 
+from hook_context import has_active_artifacts, print_skipped
+
 
 CATEGORIES = [
     ("문제와 배경", 10, ["문제", "배경"]),
     ("핵심 사용자", 10, ["핵심 사용자", "사용자"]),
     ("핵심 가치와 KPI", 10, ["핵심 가치", "KPI", "성공 지표"]),
-    ("MVP 범위와 제외 범위", 10, ["MVP", "제외 범위"]),
     ("핵심 화면과 사용자 여정", 10, ["화면", "사용자 여정"]),
     ("핵심 유저 플로우", 10, ["핵심 유저 플로우", "진입", "사용 규모", "품질 기준"]),
-    ("기능 요구사항", 10, ["기능", "요구사항"]),
+    ("기능 요구사항, 우선순위, 운영 의도, 확장 가능성", 20, ["요구사항", "Must-have", "Nice-to-have", "운영 의도", "확장 가능성"]),
     ("정책 정의", 10, ["정책", "권한"]),
     ("상태, 권한, 예외", 10, ["상태", "권한", "예외"]),
     ("측정/기록 설계", 10, ["측정", "기록", "이벤트"]),
@@ -45,7 +46,15 @@ def main() -> int:
     parser.add_argument("--review-dir", default=os.environ.get("ITP_REVIEW_DIR", "reviews"))
     args = parser.parse_args()
 
+    if not has_active_artifacts(paths=args.files):
+        print_skipped("No Idea to Product planning documents found; completeness review was not written.")
+        return 0
+
     text = read_files(args.files)
+    if not text.strip():
+        print_skipped("No Idea to Product planning document content found; completeness review was not written.")
+        return 0
+
     reference_research_exists = Path("REFERENCE_RESEARCH.md").exists() or "참고한 레퍼런스" in text or "Reference" in text
     reference_status = "완료" if reference_research_exists else "미완료 / 불필요 판단 필요"
     scores = []

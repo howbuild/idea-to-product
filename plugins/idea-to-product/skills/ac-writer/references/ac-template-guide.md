@@ -5,7 +5,10 @@ Use `templates/acceptance-criteria.md`.
 Each AC should include:
 
 - ID
-- related feature
+- related requirement
+- priority
+- operating intent
+- scalability
 - related screen `data-req-id`
 - related policy ID
 - related measurement/logging ID

@@ -14,8 +14,8 @@ Use when several references should be compared for product design decisions.
 - 권한정책
 - 예외 처리
 - 측정/기록
-- MVP에 필요한 기능
-- v2로 미룰 기능
+- Must-have로 필요한 기능
+- Nice-to-have로 둘 기능
 
 ## Rules
 

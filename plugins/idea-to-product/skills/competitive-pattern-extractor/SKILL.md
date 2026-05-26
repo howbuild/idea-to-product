@@ -1,6 +1,6 @@
 ---
 name: competitive-pattern-extractor
-description: Extracts reusable patterns from competitor or reference examples without copying them, then rates MVP fit as Green, Yellow, or Red.
+description: Extracts reusable patterns from competitor or reference examples without copying them, then rates Must-have/Nice-to-have fit as Green, Yellow, or Red.
 ---
 
 # Competitive Pattern Extractor
@@ -15,15 +15,15 @@ Extract reusable product patterns from competitive or reference examples without
 - common permission policy
 - common exception handling
 - common measurement/logging pattern
-- common MVP boundary
-- features often deferred to v2
+- common Must-have boundary
+- features often kept as Nice-to-have
 
 ## Output
 
 - reference pattern
 - source
 - current product relevance
-- MVP fit: Green / Yellow / Red
+- priority fit: Green / Yellow / Red
 - benefit
 - caution
 - recommendation

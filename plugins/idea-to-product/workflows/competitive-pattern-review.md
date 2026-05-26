@@ -8,7 +8,7 @@ Review whether a pattern found in a reference or competitor should apply to the 
 
 - Core Intent와 연결되는가
 - 핵심 사용자에게 필요한가
-- MVP에 꼭 필요한가
+- Must-have에 꼭 필요한가
 - 운영 복잡도를 늘리는가
 - 개발 범위를 과하게 키우는가
 - 정책/권한/상태 설계가 필요한가
@@ -20,7 +20,7 @@ Review whether a pattern found in a reference or competitor should apply to the 
 참고 패턴:
 출처:
 현재 제품과의 관련성:
-MVP 적합도:
+우선순위 적합도:
 - Green
 - Yellow
 - Red

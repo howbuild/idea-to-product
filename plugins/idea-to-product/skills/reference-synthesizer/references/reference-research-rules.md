@@ -9,8 +9,8 @@ Use it to create:
 - state candidates
 - permission candidates
 - measurement/logging candidates
-- MVP fit judgments
-- excluded-scope judgments
+- Must-have/Nice-to-have fit judgments
+- Must-have/Nice-to-have judgments
 - AC candidates
 
 Do not use it as a market research report.

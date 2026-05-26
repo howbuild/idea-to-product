@@ -9,6 +9,8 @@ import os
 import re
 from pathlib import Path
 
+from hook_context import has_active_artifacts, print_skipped
+
 
 REQ_RE = re.compile(r"data-req-id=[\"']([^\"']+)[\"']")
 ACTION_RE = re.compile(r"<button|role=[\"']button|type=[\"']submit", re.IGNORECASE)
@@ -27,7 +29,15 @@ def main() -> int:
     parser.add_argument("--review-dir", default=os.environ.get("ITP_REVIEW_DIR", "reviews"))
     args = parser.parse_args()
 
+    if not has_active_artifacts(paths=[args.wireframe]):
+        print_skipped("No wireframe found; wireframe review was not written.")
+        return 0
+
     text = read_text(Path(args.wireframe))
+    if not text.strip():
+        print_skipped("No wireframe content found; wireframe review was not written.")
+        return 0
+
     req_ids = sorted(set(REQ_RE.findall(text)))
     action_count = len(ACTION_RE.findall(text))
     state_hits = [word for word in STATE_WORDS if word.lower() in text.lower()]

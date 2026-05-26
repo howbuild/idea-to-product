@@ -33,13 +33,15 @@ D. 잘 모르겠음
 B. 클릭 여부만 기록한다.
 
 추천 이유:
-MVP에서는 핵심 기능이 실제로 쓰이는지 먼저 확인하는 것이 좋다.
+첫 버전에서는 핵심 기능이 실제로 쓰이는지 먼저 확인하는 것이 좋다.
 ```
 
 ## Output
 
 - measurement ID
-- related feature
+- related requirement
+- operating intent: Production, Pilot, Demo, Test, or One-off
+- scalability: 확장 가능, 제한적 확장, or 일회성
 - user flow item: 진입과 다음 행동, 사용 규모, or 품질 기준
 - related screen `data-req-id`
 - recorded action

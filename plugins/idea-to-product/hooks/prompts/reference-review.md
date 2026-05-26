@@ -8,4 +8,4 @@ Check:
 - check date exists
 - fact and inference are separated
 - copied competitor behavior is not treated as requirement
-- findings connect to questions, policies, states, permissions, measurement, MVP scope, excluded scope, or AC
+- findings connect to questions, policies, states, permissions, measurement, Must-have/Nice-to-have priority, or AC

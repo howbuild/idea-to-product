@@ -1,6 +1,6 @@
 ---
 name: design-brief-writer
-description: Writes Claude Design handoff briefs and prototype prompts from confirmed product decisions, including screens, actions, states, policies, measurement requirements, excluded scope, and unresolved items.
+description: Writes Claude Design handoff briefs and prototype prompts from confirmed product decisions, including screens, actions, states, policies, measurement requirements, Must-have/Nice-to-have priority, operating intent, scalability, and unresolved items.
 ---
 
 # Design Brief Writer
@@ -21,6 +21,7 @@ Create design handoff artifacts for Claude Cowork + Claude Design mode.
 - Do not choose color, font, or layout taste.
 - Do not expand functionality.
 - Mark new feature ideas as suggestions.
+- Keep Nice-to-have requirements out of the prototype unless the user explicitly asks to visualize them.
 - Keep product structure, states, permissions, policy, measurement, and AC visible.
 - Keep the Core User Flow visible as 진입과 다음 행동, 사용 규모, and 품질 기준.
 

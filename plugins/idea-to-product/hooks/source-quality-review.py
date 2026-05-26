@@ -8,6 +8,8 @@ import json
 import os
 from pathlib import Path
 
+from hook_context import has_active_artifacts, print_skipped
+
 
 REQUIRED_MARKERS = ["출처", "확인 날짜", "관찰한", "추론", "한계"]
 
@@ -19,7 +21,15 @@ def main() -> int:
     args = parser.parse_args()
 
     path = Path(args.reference)
+    if not has_active_artifacts(paths=[args.reference]):
+        print_skipped("No reference research document found; source quality review was not written.")
+        return 0
+
     text = path.read_text(encoding="utf-8") if path.exists() else ""
+    if not text.strip():
+        print_skipped("No reference research document content found; source quality review was not written.")
+        return 0
+
     missing = [marker for marker in REQUIRED_MARKERS if marker not in text]
     warnings = []
     if not text:

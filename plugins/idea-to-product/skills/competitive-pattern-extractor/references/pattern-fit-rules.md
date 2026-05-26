@@ -2,8 +2,8 @@
 
 Rate each pattern:
 
-- Green: fits Core Intent and MVP with low complexity
-- Yellow: useful but should be reduced or moved to v2
+- Green: fits Core Intent as Must-have with low complexity
+- Yellow: useful but should be reduced or kept as Nice-to-have
 - Red: likely scope drift or copy risk
 
 Always include:

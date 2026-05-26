@@ -11,8 +11,8 @@ They are not the product and not a market research report.
 - state value candidates
 - permission policy candidates
 - measurement/logging candidates
-- MVP judgment
-- v2 or excluded-scope judgment
+- Must-have/Nice-to-have judgment
+- Must-have or Nice-to-have judgment
 - AC candidates
 
 ## Rules

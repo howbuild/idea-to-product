@@ -11,4 +11,4 @@
 - Use the Core User Flow as 진입과 다음 행동, 사용 규모, and 품질 기준. Ask it in concrete language, not as abstract flow theory.
 - Product questions should be easy to understand at first read while keeping useful practical terms.
 - Keep the HTML wireframe as a structural prototype.
-- Do not confirm new MVP scope until the user explicitly chooses after a Green/Yellow/Red feature review.
+- Do not mark a new feature as Must-have until the user explicitly chooses after a Green/Yellow/Red feature review.

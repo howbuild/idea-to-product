@@ -1,6 +1,6 @@
 ---
 name: reference-synthesizer
-description: Turns reference research into product questions, policy candidates, state candidates, permission candidates, measurement/logging candidates, MVP judgments, and AC candidates.
+description: Turns reference research into product questions, policy candidates, state candidates, permission candidates, measurement/logging candidates, Must-have/Nice-to-have judgments, operating-intent judgments, and AC candidates.
 ---
 
 # Reference Synthesizer
@@ -22,15 +22,16 @@ Reference research is not the product. It is a support layer for better question
 - state candidate
 - permission candidate
 - measurement/logging candidate
-- MVP fit
-- excluded-scope or v2 candidate
+- Must-have/Nice-to-have fit
+- Must-have or Nice-to-have candidate
+- operating intent candidate
 - limitation
 
 ## Rules
 
 - Do not copy competitors.
 - Do not turn unsourced claims into confirmed requirements.
-- Drop findings that do not connect to questions, policy, state, permission, measurement, MVP scope, excluded scope, or AC.
+- Drop findings that do not connect to questions, policy, state, permission, measurement, Must-have/Nice-to-have priority, or AC.
 
 ## References
 

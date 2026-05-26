@@ -1,6 +1,6 @@
 ---
 name: ac-writer
-description: Writes testable acceptance criteria using Given/When/Then, linking each AC to feature, screen data-req-id, policy ID, and measurement/logging ID.
+description: Writes testable acceptance criteria using Given/When/Then, linking each AC to requirement, priority, operating intent, scalability, screen data-req-id, policy ID, and measurement/logging ID.
 ---
 
 # AC Writer

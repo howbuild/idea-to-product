@@ -39,6 +39,7 @@
 - `hooks/hooks.claude.json`
 - `hooks/hooks.codex.json`
 - `hooks/hook-map.md`
+- `hooks/hook_context.py`
 - `hooks/session-start.py`
 - `hooks/user-prompt-scope-router.py`
 - `hooks/feature-drift-gate.py`
@@ -89,4 +90,4 @@
 
 ## Domain, Templates, MCP, Docs, Examples
 
-See the matching directories for templates, guides, and generic sample output.
+See the matching directories for templates, guides, and generic sample output. `templates/pm-note.md` is a working-note template for marking an active Idea to Product planning workspace.

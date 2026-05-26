@@ -33,5 +33,5 @@ Research should produce:
 - state candidates
 - permission candidates
 - measurement/logging candidates
-- MVP or v2 judgments
+- Must-have or Nice-to-have judgments
 - AC candidates

@@ -18,6 +18,8 @@ macOS configs use `python3`. Windows configs use `py -3`.
 
 `UserPromptExpansion` is kept in Claude configs. It is omitted from Codex configs because support can vary by Codex runtime surface.
 
+Hooks must not create review files during unrelated coding work. When no `PM_NOTE.md` or recognizable Idea to Product artifact exists in the current working directory, review hooks return a skipped JSON response and do not write to `reviews/`. Explicit runs can set `ITP_ACTIVE=1`.
+
 ## Gates
 
 - `user-prompt-scope-router.py`: detects feature, scope, policy, wireframe, and document-generation intent
@@ -26,7 +28,7 @@ macOS configs use `python3`. Windows configs use `py -3`.
 - `policy-consistency-review.py`: checks policy, state, permission, and exception coverage
 - `measurement-coverage-review.py`: checks events and records
 - `completeness-gate.py`: checks PRD completeness before document generation
-- `cross-document-consistency-review.py`: checks PRD, AC, POLICY, MEASUREMENT, and DECISION_LOG
+- `cross-document-consistency-review.py`: checks PRD, AC, POLICY, MEASUREMENT, DECISION_LOG, and REVIEW_REPORT
 - `human-writing-final-pass.py`: checks AI-like wording before final save
 - `domain-pack-validator.py`: validates injected domain-pack structure
 - `output-validator.py`: validates output files

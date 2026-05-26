@@ -8,6 +8,8 @@ import json
 import os
 from pathlib import Path
 
+from hook_context import has_domain_pack, print_skipped
+
 
 REQUIRED = [
     "domain.yaml",
@@ -29,6 +31,10 @@ def main() -> int:
     args = parser.parse_args()
 
     base = Path(args.domain_path)
+    if not has_domain_pack(base):
+        print_skipped("No Idea to Product domain pack found; domain-pack validation report was not written.")
+        return 0
+
     missing = [name for name in REQUIRED if not (base / name).exists()]
     warning = "도메인팩은 질문 후보이며 확정 정책이 아닙니다. 사용자 확인 전까지 요구사항으로 확정하지 마세요."
 

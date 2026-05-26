@@ -20,8 +20,8 @@ Use when the product structure is ready to hand off to Claude Design.
 - product one-liner
 - core user
 - problem
-- MVP scope
-- excluded scope
+- Must-have requirements
+- Nice-to-have requirements
 - Core User Flow: 진입과 다음 행동, 사용 규모, and 품질 기준
 - screen list
 - screen purpose

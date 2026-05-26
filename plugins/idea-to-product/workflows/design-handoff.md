@@ -9,7 +9,7 @@ Claude Cowork + Design is a first-class support path. It is not a replacement fo
 ## Steps
 
 1. Confirm Core Intent Card.
-2. Confirm MVP scope and excluded scope.
+2. Confirm requirement priority: Must-have and Nice-to-have.
 3. Confirm Core User Flow: 진입과 다음 행동, 사용 규모, and 품질 기준.
 4. Confirm screen list and screen purpose.
 5. Confirm states, permissions, empty/error/permission-denied states, and policies.

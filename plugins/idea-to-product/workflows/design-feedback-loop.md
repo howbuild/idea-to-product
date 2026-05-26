@@ -13,7 +13,7 @@ Import feedback or output from Claude Design and decide whether it changes produ
 5. Run policy review for new policy or permission implications.
 6. Run measurement review for new actions or state changes.
 7. Record accepted changes in DECISION_LOG.
-8. Keep rejected or deferred items in v2, excluded scope, or unresolved items.
+8. Keep deferred items as Nice-to-have or unresolved items.
 
 ## Rule
 

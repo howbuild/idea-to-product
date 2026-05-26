@@ -13,6 +13,8 @@ Collect enough product context to create the first Core Intent Card and structur
 - desired outcome
 - where the user comes from, if known
 - what the user should do next, if known
+- operating intent, if known
+- scalability expectation, if known
 - domain context, if provided
 
 ## Steps
@@ -25,21 +27,30 @@ Collect enough product context to create the first Core Intent Card and structur
    - 진입과 다음 행동: 사용자는 어디서 와서 어디로 가나요?
    - 사용 규모: 얼마나 많이 지나가게 만들고 싶나요?
    - 품질 기준: 사용자가 많아져도 계속 괜찮게 쓰려면 어떤 규칙이 필요할까요?
-6. Separate MVP candidates from later ideas.
-7. Mark unknowns as assumptions or open questions.
-8. Create the initial Core Intent Card.
+6. Separate Must-have requirements from Nice-to-have ideas.
+7. Identify whether the product is for Production, Pilot, Demo, Test, or One-off use.
+8. Identify whether the product should scale or can stay temporary.
+9. Mark unknowns as assumptions or open questions.
+10. Create `PM_NOTE.md` with the initial Core Intent Card. `PM_NOTE.md` is a working note and hook activation marker, not a final output.
 
 ## Output
 
 ```md
+# PM_NOTE
+
+This file marks the folder as an active Idea to Product planning workspace.
+
 ## Core Intent Card
 
 - Idea:
 - Core user:
 - Core problem:
 - Core value:
-- MVP scope:
-- Excluded scope:
+- Requirement priority:
+  - Must-have:
+  - Nice-to-have:
+- Operating intent: Production / Pilot / Demo / Test / One-off
+- Scalability:
 - Success KPI:
 - Core user flow:
   - 진입과 다음 행동:

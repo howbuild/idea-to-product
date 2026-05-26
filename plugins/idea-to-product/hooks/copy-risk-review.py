@@ -8,6 +8,8 @@ import json
 import os
 from pathlib import Path
 
+from hook_context import has_active_artifacts, print_skipped
+
 
 RISK_TERMS = ["그대로", "복사", "동일하게", "경쟁사처럼", "clone", "copy"]
 SEPARATION_TERMS = ["Core Intent", "현재 제품", "반영 여부", "반영하지 않은 이유", "결정근거"]
@@ -28,7 +30,16 @@ def main() -> int:
     parser.add_argument("--review-dir", default=os.environ.get("ITP_REVIEW_DIR", "reviews"))
     args = parser.parse_args()
 
+    paths = [str(Path(args.base_dir) / name) for name in ["PRD.md", "REFERENCE_RESEARCH.md", "DECISION_LOG.md"]]
+    if not has_active_artifacts(base_dir=args.base_dir, paths=paths):
+        print_skipped("No Idea to Product requirement or reference documents found; copy risk review was not written.")
+        return 0
+
     text = read_all(Path(args.base_dir), ["PRD.md", "REFERENCE_RESEARCH.md", "DECISION_LOG.md"])
+    if not text.strip():
+        print_skipped("No Idea to Product requirement or reference document content found; copy risk review was not written.")
+        return 0
+
     risk_hits = [term for term in RISK_TERMS if term.lower() in text.lower()]
     has_separation = any(term.lower() in text.lower() for term in SEPARATION_TERMS)
     warnings = []

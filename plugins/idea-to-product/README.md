@@ -49,7 +49,7 @@ Use research to create better:
 - state candidates
 - permission candidates
 - measurement/logging candidates
-- MVP and v2 decisions
+- Must-have and Nice-to-have decisions
 
 Research findings must be connected to PRD, policy, measurement, AC, or decision log. Competitors must not be copied.
 

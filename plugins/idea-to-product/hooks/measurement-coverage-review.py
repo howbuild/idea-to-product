@@ -9,6 +9,8 @@ import os
 import re
 from pathlib import Path
 
+from hook_context import has_active_artifacts, print_skipped
+
 
 BUTTON_RE = re.compile(r"<button[^>]*>(.*?)</button>", re.IGNORECASE | re.DOTALL)
 STATE_TERMS = ["접수", "처리중", "완료", "보류", "취소", "삭제", "수정", "등록"]
@@ -26,8 +28,16 @@ def main() -> int:
     parser.add_argument("--review-dir", default=os.environ.get("ITP_REVIEW_DIR", "reviews"))
     args = parser.parse_args()
 
+    if not has_active_artifacts(paths=[args.wireframe, args.measurement]):
+        print_skipped("No wireframe or measurement document found; measurement review was not written.")
+        return 0
+
     wireframe = read(args.wireframe)
     measurement = read(args.measurement)
+    if not wireframe.strip() and not measurement.strip():
+        print_skipped("No wireframe or measurement document content found; measurement review was not written.")
+        return 0
+
     buttons = [re.sub(r"<[^>]+>", "", match).strip() for match in BUTTON_RE.findall(wireframe)]
     state_hits = [term for term in STATE_TERMS if term in wireframe]
     uncovered_buttons = [button for button in buttons if button and button not in measurement]

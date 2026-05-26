@@ -16,7 +16,9 @@ They are not responsible for replacing the full PM workflow.
 
 If a runtime supports agent-based hooks, pair each script with the listed reviewer agents.
 
-If a runtime does not support agent-based hooks, the scripts still generate structured JSON and markdown review reports.
+If a runtime does not support agent-based hooks, the scripts still generate structured JSON and markdown review reports when Idea to Product artifacts exist.
+
+Lifecycle hooks must stay quiet outside an Idea to Product planning session. If no `PM_NOTE.md`, `PRD.md`, `AC.md`, `POLICY.md`, `MEASUREMENT.md`, `DECISION_LOG.md`, `REFERENCE_RESEARCH.md`, `wireframe.html`, or related output exists, hooks print a skipped JSON response and do not create `reviews/`.
 
 Runtime hook files:
 
@@ -57,3 +59,5 @@ Override with:
 ```bash
 ITP_REVIEW_DIR=/path/to/reviews
 ```
+
+Reports are only written when `PM_NOTE.md` or another recognizable Idea to Product artifact exists, or when `ITP_ACTIVE=1` is set for an explicit hook run.

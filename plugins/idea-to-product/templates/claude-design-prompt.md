@@ -7,8 +7,10 @@ Use this prompt to visualize the confirmed product structure.
 - Product:
 - Core user:
 - Problem:
-- MVP scope:
-- Excluded scope:
+- Must-have requirements:
+- Nice-to-have requirements:
+- Operating intent: Production / Pilot / Demo / Test / One-off
+- Scalability:
 - Core User Flow:
   - 진입과 다음 행동:
   - 사용 규모:
@@ -24,6 +26,7 @@ Do not force or assume a specific visual style, color palette, font, or final la
 
 - Do not add new product features.
 - Do not invent new states or policies.
+- Do not include Nice-to-have requirements in the prototype unless the user explicitly asks for them.
 - If a new feature idea appears useful, list it separately as a suggestion.
 - Keep unresolved items visible.
 
@@ -32,6 +35,7 @@ Do not force or assume a specific visual style, color palette, font, or final la
 - screens
 - screen purpose
 - main actions
+- operating intent
 - state values
 - permission policy
 - empty state

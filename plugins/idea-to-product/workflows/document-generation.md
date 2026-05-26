@@ -21,6 +21,10 @@ Generate final product documents from confirmed decisions.
 
 Final documents should be easy to read, but use professional product wording. Interview questions may be simple; PRD, POLICY, MEASUREMENT, AC, and DECISION_LOG should state confirmed decisions, assumptions, or unresolved items.
 
+PRD, POLICY, MEASUREMENT, AC, DECISION_LOG, and REVIEW_REPORT must use the same requirement names, priority, operating intent, scalability, and decision state. Do not let the PRD say one thing while the policy, measurement, acceptance criteria, decision log, or review report says another.
+
+When DESIGN_HANDOFF_BRIEF or CLAUDE_DESIGN_PROMPT is generated, preserve the same requirement names, priority, operating intent, and scalability there too. Nice-to-have items stay out of the prototype unless the user explicitly asks to visualize them.
+
 ## Precondition
 
 Run `completeness-gate.py` before final generation.

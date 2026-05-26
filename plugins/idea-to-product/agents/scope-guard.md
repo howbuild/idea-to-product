@@ -1,6 +1,6 @@
 ---
 name: scope-guard
-description: Reviews feature additions against Core Intent and MVP scope, returning Green/Yellow/Red with benefits, cautions, recommendation, and user confirmation requirements.
+description: Reviews feature additions against Core Intent and Must-have/Nice-to-have priority, returning Green/Yellow/Red with benefits, cautions, recommendation, and user confirmation requirements.
 model: default
 effort: medium
 maxTurns: 3
@@ -15,8 +15,8 @@ Review whether a feature addition drifts away from the product essence.
 ## Review Items
 
 - Core Intent와 연결되는가
-- MVP 안에 들어와야 하는가
-- v2로 보내도 되는가
+- Must-have로 들어와야 하는가
+- Nice-to-have로 두어도 되는가
 - 기존 기능을 흐리지 않는가
 - 운영 복잡도를 늘리지 않는가
 
@@ -32,6 +32,6 @@ Review whether a feature addition drifts away from the product essence.
 
 ## Decision Guide
 
-- Green: MVP 포함 가능
-- Yellow: 축소 포함 또는 v2 후보
-- Red: 보류 또는 v2 이동 권장
+- Green: Must-have 가능
+- Yellow: 축소 Must-have 또는 Nice-to-have 후보
+- Red: 보류 또는 Nice-to-have 권장

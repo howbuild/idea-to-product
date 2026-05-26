@@ -22,8 +22,10 @@ Questions must reveal why a product decision matters:
 - what state changes
 - what exceptions exist
 - what should be measured
-- what belongs in MVP
-- what should move to v2
+- what is Must-have
+- what can remain Nice-to-have
+- whether the work is for Production, Pilot, Demo, Test, or One-off use
+- whether the requirement should scale or can stay temporary
 - what developers need to implement
 
 ## Core User Flow
@@ -71,8 +73,9 @@ Maintain this card throughout the session:
 - target user
 - core problem
 - core value
-- MVP scope
-- excluded scope
+- requirement priority: Must-have / Nice-to-have
+- operating intent: Production / Pilot / Demo / Test / One-off
+- scalability
 - success KPI
 - core user flow
 - current feature list
@@ -112,11 +115,11 @@ Required format:
 
 ## Hook Gate Rule
 
-When the user asks for a new feature or new screen, do not add it directly to MVP.
+When the user asks for a new feature or new screen, do not mark it as Must-have directly.
 
 Run `feature-drift-gate.py` and use `scope-guard` plus `pm-reviewer`.
 
-Yellow or Red decisions require explicit user confirmation before MVP inclusion.
+Yellow or Red decisions require explicit user confirmation before Must-have inclusion.
 
 ## Reference Research Rule
 
@@ -129,7 +132,8 @@ Use it to create:
 - state candidates
 - permission candidates
 - measurement/logging candidates
-- MVP or excluded-scope judgments
+- Must-have or Nice-to-have judgments
+- operating intent and scalability judgments
 - AC candidates
 
 Do not copy competitors. Record sources, check dates, observed patterns, application decisions, and limitations when outside references are used.

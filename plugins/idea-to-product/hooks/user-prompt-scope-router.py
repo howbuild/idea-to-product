@@ -7,6 +7,8 @@ import json
 import os
 import sys
 
+from hook_context import should_review_prompt
+
 
 FEATURE_KEYWORDS = [
     "추가",
@@ -48,6 +50,10 @@ def read_prompt() -> str:
 
 def main() -> int:
     prompt = read_prompt()
+    if not should_review_prompt(prompt):
+        print(json.dumps({"skipped": True, "reason": "Prompt is not an Idea to Product request."}, ensure_ascii=False, indent=2))
+        return 0
+
     found_features = [kw for kw in FEATURE_KEYWORDS if kw.lower() in prompt.lower()]
     found_docs = [kw for kw in DOCUMENT_KEYWORDS if kw.lower() in prompt.lower()]
     found_wireframe = [kw for kw in WIREFRAME_KEYWORDS if kw.lower() in prompt.lower()]

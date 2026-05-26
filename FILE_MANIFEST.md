@@ -36,7 +36,7 @@ This manifest records the intended marketplace-ready repository layout.
 
 - `workflows/`: PM process definitions
 - `commands/`: user entrypoints
-- `hooks/`: lifecycle hook scripts, maps, and prompts
+- `hooks/`: lifecycle hook scripts, shared hook guards, maps, and prompts
 - `agents/`: specialist reviewer instructions
 - `skills/`: reusable supporting skills
 - `domains/`: domain-pack template and registry example

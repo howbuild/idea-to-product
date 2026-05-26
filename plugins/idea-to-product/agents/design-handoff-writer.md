@@ -17,8 +17,7 @@ Prepare Claude Design handoff artifacts from confirmed product requirements.
 - 제품 한 줄 설명
 - 핵심 사용자
 - 해결하려는 문제
-- MVP 범위
-- 제외 범위
+- 요구사항 우선순위: Must-have / Nice-to-have
 - 핵심 유저 플로우: 진입과 다음 행동, 사용 규모, 품질 기준
 - 주요 화면 목록
 - 화면별 목적

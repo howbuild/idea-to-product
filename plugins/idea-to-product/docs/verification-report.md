@@ -113,7 +113,7 @@ Command:
 printf '%s' '{"candidate_feature":"실시간 채팅도 넣고 싶어"}' | python3 plugins/idea-to-product/hooks/feature-drift-gate.py --review-dir /tmp/itp-check-reviews
 ```
 
-Result: `Red`, with MVP inclusion pending explicit user confirmation.
+Result: `Red`, with Must-have inclusion pending explicit user confirmation.
 
 ## Wireframe Check
 

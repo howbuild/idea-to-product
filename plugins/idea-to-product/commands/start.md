@@ -9,15 +9,17 @@ Use when the user wants to start the Idea to Product workflow.
 ## Run
 
 1. Receive the idea.
-2. Create the Core Intent Card.
-3. Apply the Core User Flow.
-4. Ask whether a domain pack is needed if domain context is missing or external.
-5. Create the first structural HTML wireframe.
-6. Show the first screen-based question card.
+2. Create `PM_NOTE.md` to mark this folder as an active Idea to Product planning workspace.
+3. Create the Core Intent Card.
+4. Apply the Core User Flow.
+5. Ask whether a domain pack is needed if domain context is missing or external.
+6. Create the first structural HTML wireframe.
+7. Show the first screen-based question card.
 
 ## Required Behavior
 
 - Do not generate final documents immediately.
+- `PM_NOTE.md` is a working note and hook activation marker, not a final output.
 - Do not treat assumptions as confirmed requirements.
 - Keep the wireframe structural.
 - Use `question-designer` for the first question card.
@@ -28,14 +30,21 @@ Use when the user wants to start the Idea to Product workflow.
 ## First Output Shape
 
 ```md
+# PM_NOTE
+
+This file marks the folder as an active Idea to Product planning workspace.
+
 ## Core Intent Card
 
 - Idea:
 - Core user:
 - Core problem:
 - Core value:
-- MVP scope:
-- Excluded scope:
+- Requirement priority:
+  - Must-have:
+  - Nice-to-have:
+- Operating intent: Production / Pilot / Demo / Test / One-off
+- Scalability:
 - Success KPI:
 - Core user flow:
   - 진입과 다음 행동:

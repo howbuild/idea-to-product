@@ -14,7 +14,7 @@ Use when Claude Design or a designer returns a prototype, screen, or feedback.
 4. If policy or permission implications appear, run `policy-consistency-review.py`.
 5. If action or state tracking implications appear, run `measurement-coverage-review.py`.
 6. Record accepted changes in `DECISION_LOG`.
-7. Record rejected or deferred changes as v2, excluded, or unresolved.
+7. Record deferred changes as Nice-to-have or unresolved.
 
 ## Rule
 

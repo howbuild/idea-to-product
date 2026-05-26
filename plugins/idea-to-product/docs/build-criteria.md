@@ -87,7 +87,7 @@ User-facing questions must be easy to understand at first read, but must keep us
 
 ## Reference Research Rule
 
-Reference research is a support layer. It turns outside examples into question candidates, policy candidates, state candidates, permission candidates, measurement/logging candidates, MVP judgments, excluded-scope judgments, and AC candidates.
+Reference research is a support layer. It turns outside examples into question candidates, policy candidates, state candidates, permission candidates, measurement/logging candidates, Must-have/Nice-to-have judgments, operating-intent and scalability judgments, and AC candidates.
 
 It must distinguish source facts from inference and must not copy competitors.
 

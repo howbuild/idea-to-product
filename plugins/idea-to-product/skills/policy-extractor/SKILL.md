@@ -27,7 +27,9 @@ For each policy:
 
 - policy ID
 - policy name
-- target
+- related requirement
+- operating intent
+- scalability
 - condition
 - behavior
 - exception

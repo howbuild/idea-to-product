@@ -10,7 +10,7 @@ Check that the final output is internally consistent, readable, and complete eno
 2. Run `human-writing-final-pass.py`.
 3. Run `output-validator.py`.
 4. Confirm unresolved assumptions remain marked.
-5. Confirm no new MVP feature was added without drift review.
+5. Confirm no new feature was marked Must-have without drift review.
 6. Confirm no concrete domain pack was added to the core repo.
 7. Confirm Design handoff does not add unapproved features.
 

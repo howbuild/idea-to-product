@@ -26,20 +26,22 @@ Run this flow whenever the user wants to add a new feature, screen, button, auto
 
 1. Extract the new feature candidate.
 2. Compare it with the Core Intent Card.
-3. Compare it with MVP scope.
+3. Compare it with current Must-have requirements.
 4. Evaluate operational complexity.
-5. Evaluate policy, state, and permission impact.
-6. Evaluate measurement and logging impact.
-7. Decide Green, Yellow, or Red.
-8. Provide benefits, cautions, recommendation, and recommendation reason.
-9. Do not confirm it into MVP until the user chooses.
-10. Record the decision in `DECISION_LOG`.
+5. Evaluate operating intent: Production, Pilot, Demo, Test, or One-off.
+6. Evaluate scalability impact.
+7. Evaluate policy, state, and permission impact.
+8. Evaluate measurement and logging impact.
+9. Decide Green, Yellow, or Red.
+10. Provide benefits, cautions, recommendation, and recommendation reason.
+11. Do not mark it as Must-have until the user chooses.
+12. Record the decision in `DECISION_LOG`.
 
 ## Decision Levels
 
-- Green: can be included in MVP.
-- Yellow: include in reduced form or move to v2.
-- Red: recommend hold or v2.
+- Green: can be marked Must-have.
+- Yellow: include in reduced form or keep as Nice-to-have.
+- Red: recommend holding or keeping as Nice-to-have.
 
 ## Output Format
 
@@ -48,11 +50,14 @@ Run this flow whenever the user wants to add a new feature, screen, button, auto
 
 - Candidate feature:
 - Core Intent connection:
-- MVP fit:
+- Must-have fit:
 - Operational complexity:
+- Operating intent:
+- Scalability impact:
 - Policy/state/permission impact:
 - Measurement/logging impact:
 - Decision: Green | Yellow | Red
+- Priority recommendation: Must-have | Nice-to-have | Hold
 
 ### 장점
 

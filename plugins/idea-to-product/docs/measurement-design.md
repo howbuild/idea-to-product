@@ -20,7 +20,7 @@ Measurement design connects product behavior to evidence.
 이 버튼을 눌렀다는 기록을 남겨야 하나요?
 ```
 
-This helps the user decide whether an action is worth tracking in MVP.
+This helps the user decide whether an action is worth tracking in the current version.
 
 Use flow questions when useful:
 

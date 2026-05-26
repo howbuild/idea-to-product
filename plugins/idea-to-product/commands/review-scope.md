@@ -10,9 +10,9 @@ Use when the user wants to review whether the current product scope still matche
 
 1. Read Core Intent Card.
 2. Read current feature list.
-3. Compare each feature against the core user, core problem, MVP scope, excluded scope, and KPI.
+3. Compare each feature against the core user, core problem, current Must-have requirements, Nice-to-have candidates, and KPI.
 4. Route unclear or expanding items through `feature-drift-gate.py`.
-5. Return MVP 포함, 축소 포함, v2 이동, or 보류.
+5. Return Must-have, reduced Must-have, Nice-to-have, or Hold.
 
 ## Output
 

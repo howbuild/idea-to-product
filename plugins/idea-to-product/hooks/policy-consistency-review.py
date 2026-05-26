@@ -8,6 +8,8 @@ import json
 import os
 from pathlib import Path
 
+from hook_context import has_active_artifacts, print_skipped
+
 
 CHECKS = {
     "state_values": ["상태", "접수", "처리중", "완료", "보류"],
@@ -33,7 +35,15 @@ def main() -> int:
     parser.add_argument("--review-dir", default=os.environ.get("ITP_REVIEW_DIR", "reviews"))
     args = parser.parse_args()
 
+    if not has_active_artifacts(paths=args.files):
+        print_skipped("No Idea to Product policy documents found; policy review was not written.")
+        return 0
+
     text = load(args.files)
+    if not text.strip():
+        print_skipped("No Idea to Product policy document content found; policy review was not written.")
+        return 0
+
     missing = []
     for check, terms in CHECKS.items():
         if not any(term.lower() in text.lower() for term in terms):
